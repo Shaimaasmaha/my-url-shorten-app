@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo and menu */}
           <div className="flex items-center">
-            <img src={logo} alt="Logo" className="h-8" />
+            <img src={logo} alt="Logo" className="h-12 p-3" />
             <ul className="hidden md:flex menu menu-horizontal p-0 space-x-4 ml-6">
               <li><a className="text-gray-600 hover:text-black" href="/">Feature</a></li>
               <li><a className="text-gray-600 hover:text-black" href="/Pricing">Pricing</a></li>
@@ -39,7 +39,7 @@ const Navbar = () => {
               className="text-gray-600 hover:text-black focus:outline-none"
               aria-label="Toggle menu"
             >
-              <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="h-6 w-6 p-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {open ? (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 ) : (
